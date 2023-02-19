@@ -9,5 +9,7 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(),
       body: const Center(child: Text("Empty project")),
     );
+
+    // Hello
   }
 }
