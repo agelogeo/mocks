@@ -1,0 +1,23 @@
+import 'package:flutter_travel_ui/models/activities';
+
+class Destination {
+    String imageUrl;
+    String city;
+    String country;
+    String description;
+    List<Actinity> activities;
+
+    Destination({
+        this.imageUrl,
+        this.city,
+        this.country,
+        this.description,
+        this.activities,
+    });
+}
+
+List<Activity> activaties = [
+    Actinity(
+        imageUrl:assets/images/st
+    )
+]
