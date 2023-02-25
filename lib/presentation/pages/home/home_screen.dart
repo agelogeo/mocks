@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:mocks/presentation/widgets/destination_carousel.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -75,6 +76,8 @@ class _HomeScreenState extends State<HomeScreen> {
                   )
                   .toList(),
             ),
+            SizedBox(height: 20.0),
+            DestinationCarousel(),
           ],
         ),
       ),
