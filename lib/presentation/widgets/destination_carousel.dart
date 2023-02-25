@@ -29,7 +29,7 @@ class ListCarousel extends StatelessWidget {
       height: 300,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
-        itemBuilder: (context, index) {
+        itemBuilder: (BuildContext context, int index) {
           Destination destination = destinations[index];
           return Container(
             margin: const EdgeInsets.all(10),
@@ -77,9 +77,10 @@ class TopRowWithSeeAll extends StatelessWidget {
               ),
               textStyle: MaterialStateProperty.all(
                 const TextStyle(
-                    fontSize: 16,
-                    fontWeight: FontWeight.w600,
-                    letterSpacing: 1.0),
+                  fontSize: 16,
+                  fontWeight: FontWeight.w600,
+                  letterSpacing: 1.0,
+                ),
               ),
             ),
             child: const Text("See All"),

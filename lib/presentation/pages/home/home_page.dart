@@ -32,8 +32,8 @@ class _HomePageState extends State<HomePage> {
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(30),
             color: _selectedIndex == index
-                ? Theme.of(context).accentColor
-                : const Color(0xFFE7EBEE)),
+                ? Theme.of(context).colorScheme.secondary
+                : const Color(0xFFE7EBEE),),
         child: Icon(
           _icons[index],
           size: 25,
@@ -66,11 +66,11 @@ class _HomePageState extends State<HomePage> {
               children: _icons
                   .asMap()
                   .entries
-                  .map((map) => _buildIcon(map.key))
+                  .map((MapEntry<int, IconData> map) => _buildIcon(map.key))
                   .toList(),
             ),
             const SizedBox(height: 20),
-            DestinationCarousel(),
+            const DestinationCarousel(),
           ],
         ),
       ),
