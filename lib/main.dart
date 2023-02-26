@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:mocks/models/recommended_model.dart';
+import 'package:mocks/presentation/pages/details/details_page.dart';
 import 'package:mocks/presentation/pages/home/home_page.dart';
 
 void main() {
