@@ -63,6 +63,7 @@ class Body extends StatelessWidget {
         itemCount: hotels.length,
         itemBuilder: (BuildContext context, int index) {
           Hotel hotel = hotels[index];
+          var destination;
           return Container(
             // color: Colors.red,
             width: 240.0,
@@ -124,13 +125,16 @@ class Body extends StatelessWidget {
                   ),
                   child: Stack(
                     children: [
-                      ClipRRect(
-                        borderRadius: BorderRadius.circular(20.0),
-                        child: Image(
-                          height: 180.0,
-                          width: 220.0,
-                          image: AssetImage(hotel.imageUrl),
-                          fit: BoxFit.cover,
+                      Hero(
+                        tag: destination.imageUrl,
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(20.0),
+                          child: Image(
+                            height: 180.0,
+                            width: 220.0,
+                            image: AssetImage(hotel.imageUrl),
+                            fit: BoxFit.cover,
+                          ),
                         ),
                       ),
                     ],
