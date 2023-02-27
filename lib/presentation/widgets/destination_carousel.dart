@@ -116,11 +116,14 @@ class DestinationCarousel extends StatelessWidget {
                             children: [
                               ClipRRect(
                                 borderRadius: BorderRadius.circular(20.0),
-                                child: Image(
-                                  height: 180.0,
-                                  width: 180.0,
-                                  image: AssetImage(destination.imageUrl),
-                                  fit: BoxFit.cover,
+                                child: Hero(
+                                  tag: destination.imageUrl,
+                                  child: Image(
+                                    height: 180.0,
+                                    width: 180.0,
+                                    image: AssetImage(destination.imageUrl),
+                                    fit: BoxFit.cover,
+                                  ),
                                 ),
                               ),
                               Positioned(

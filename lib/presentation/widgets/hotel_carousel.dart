@@ -125,16 +125,13 @@ class Body extends StatelessWidget {
                   ),
                   child: Stack(
                     children: [
-                      Hero(
-                        tag: destination.imageUrl,
-                        child: ClipRRect(
-                          borderRadius: BorderRadius.circular(20.0),
-                          child: Image(
-                            height: 180.0,
-                            width: 220.0,
-                            image: AssetImage(hotel.imageUrl),
-                            fit: BoxFit.cover,
-                          ),
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(20.0),
+                        child: Image(
+                          height: 180.0,
+                          width: 220.0,
+                          image: AssetImage(hotel.imageUrl),
+                          fit: BoxFit.cover,
                         ),
                       ),
                     ],

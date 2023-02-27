@@ -7,7 +7,6 @@ import '../../../models/destination_model.dart';
 
 class DestinationScreen extends StatefulWidget {
   final Destination destination;
-
   DestinationScreen({required this.destination});
 
   @override
